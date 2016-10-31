@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="edu.cis232.PumpkinController">
-	<!-- TODO Add Nodes -->
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.cis232.PumpkinController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="285.0" layoutX="58.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@7caKeXGki-1.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="leftEye" layoutX="128.0" layoutY="166.0" onMouseClicked="#leftEyeClickedListener" radius="34.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="rightEye" layoutX="260.0" layoutY="178.0" onMouseClicked="#rightEyeClickedListener" radius="34.0" stroke="BLACK" strokeType="INSIDE" />
+      <Arc fx:id="mouth" layoutX="210.0" layoutY="235.0" length="200.0" onMouseClicked="#mouthClickedListener" radiusX="70.0" radiusY="70.0" rotate="-122.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fd6c24" height="29.0" layoutX="200.0" layoutY="212.0" stroke="TRANSPARENT" strokeType="INSIDE" width="29.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fd6c24" height="29.0" layoutX="147.0" layoutY="261.0" stroke="TRANSPARENT" strokeType="INSIDE" width="29.0" />
+      <Label fx:id="label" layoutX="28.0" layoutY="328.0" text="Happy Halloween" textFill="#f88000" visible="false">
+         <font>
+            <Font name="Segoe Script Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
